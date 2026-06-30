@@ -1,0 +1,15 @@
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      Student var1 = new Student();
+      var1.setStudentID("CU12345");
+      var1.setName("Ali");
+      var1.setCGPA((double)3.75F);
+      System.out.println("Student ID : " + var1.getStudentID());
+      System.out.println("Name       : " + var1.getName());
+      System.out.println("CGPA       : " + var1.getCGPA());
+      System.out.println("Programme  : BIT");
+   }
+}
