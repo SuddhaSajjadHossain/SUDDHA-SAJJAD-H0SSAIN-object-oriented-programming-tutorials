@@ -1,15 +1,38 @@
-package week3;
 
+public class Main {
+    public static void main(String[] args) {
 
-class Student extends Person {
+        Appliance washingMachine = new WashingMachine("LG");
+        Appliance refrigerator = new Refrigerator("Panasonic");
 
-  
-    public Student(String name, String id) {
-        super(name, id); 
-    }
+        washingMachine.displayBrand();
+        washingMachine.turnOn();
+        washingMachine.operate();
+        washingMachine.turnOff();
 
-    @Override
-    public void introduce() {
-        System.out.println("I am a student.");
+        System.out.println();
+
+        refrigerator.displayBrand();
+        refrigerator.turnOn();
+        refrigerator.operate();
+        refrigerator.turnOff();
+
+        System.out.println();
+
+   
+        Appliance airConditioner = new AirConditioner("Daikin");
+        Appliance microwave = new Microwave("Samsung");
+
+        airConditioner.displayBrand();
+        airConditioner.turnOn();
+        airConditioner.operate();
+        airConditioner.turnOff();
+
+        System.out.println();
+
+        microwave.displayBrand();
+        microwave.turnOn();
+        microwave.operate();
+        microwave.turnOff();
     }
 }
